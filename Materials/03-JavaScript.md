@@ -9,11 +9,11 @@ Now that you have:
 
 In this build-along, you’ll make the “Add task” form actually work:
 
-✅ Add tasks to the list
-✅ Mark tasks as done (checkbox)
-✅ Remove tasks
-✅ Store tasks in the browser (localStorage) so they persist after refresh
-✅ Practice core JS skills: variables, functions, arrays, objects, events, DOM manipulation
+  - ✅ Add tasks to the list
+  - ✅ Mark tasks as done (checkbox)
+  - ✅ Remove tasks
+  - ✅ Store tasks in the browser (localStorage) so they persist after refresh
+  - ✅ Practice core JS skills: variables, functions, arrays, objects, events, DOM manipulation
 
 You’ll still use **no frameworks**. This is exactly the kind of manual work React later simplifies.
 
