@@ -185,6 +185,9 @@ Before writing code, think about:
 - What would happen if all your code was in one giant file
     
 
+> [!NOTE]
+> If you have too much problems with multiple javascript files, you can implement everything inside the app.js file
+
 ---
 
 # ✅ **STEP 2 — Define Your Data Model (State)**
