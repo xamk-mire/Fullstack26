@@ -65,7 +65,7 @@ Open DevTools Console and type:
 
 - `window.Storage`
     
-- `window.UI`
+- `window.UI` - you can find example in step 6
     
 
 If either is `undefined`, that file didn’t load or didn’t attach to `window`.
@@ -403,7 +403,7 @@ window.addEventListener("hashchange", router);
 
 
 ---
-tep 6 — UI functions: list, details, form (HTML examples + how data-action works)
+## Step 6 — UI functions: list, details, form (HTML examples + how data-action works)
 
 ### What’s the idea?
 
