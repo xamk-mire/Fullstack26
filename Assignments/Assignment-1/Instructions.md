@@ -190,6 +190,97 @@ Before writing code, think about:
 
 ---
 
+## ✅ **STEP 1.1 — window.UI guide**
+
+This guide is an example for window.UI implementation. It's not necessary to utilize this in your solution and the code examples are provided as an additional help, since the window.UI concept might be too advanced at this point.
+
+
+## How to use `window.UI` (quick instructions)
+
+### 1) Define `window.UI` in `ui.js`
+
+- Create an object on `window` that contains your UI rendering functions.
+    
+- Each function should **return an HTML string**.
+    
+
+Example pattern (illustrative):
+
+```js
+window.UI = {
+  tasksView: function (data) { /* return HTML string */ },
+  detailsView: function (data) { /* return HTML string */ },
+  formView: function (data) { /* return HTML string */ }
+};
+```
+
+---
+
+### 2) Load `ui.js` before `app.js` in `index.html`
+
+Make sure script order is:
+
+1. `storage.js`
+    
+2. `ui.js`
+    
+3. `app.js`
+    
+
+```html
+<script src="scripts/storage.js"></script>
+<script src="scripts/ui.js"></script>
+<script src="scripts/app.js"></script>
+```
+
+---
+
+### 3) Call `UI` functions from `app.js`
+
+Use `UI.<functionName>(...)` to get HTML, then render it into your app container.
+
+Example pattern (illustrative):
+
+```js
+function showTasks() {
+  const html = UI.tasksView({ tasks: tasks });
+  document.getElementById("app").innerHTML = html;
+}
+```
+
+---
+
+### 4) Keep responsibilities separate
+
+- `ui.js` / `window.UI` should **only build HTML** (no saving, no routing, no state updates).
+    
+- `app.js` should:
+    
+    - manage `tasks`
+        
+    - handle events (click/submit)
+        
+    - handle routing
+        
+    - call `UI` functions to render
+        
+
+---
+
+### 5) Test quickly in the console
+
+Open DevTools and run:
+
+- `UI` (should show an object)
+    
+- `typeof UI.tasksView` (should be `"function"`)
+    
+
+If `UI` is `undefined`, check your script order and file paths.
+
+
+---
+
 # ✅ **STEP 2 — Define Your Data Model (State)**
 
 ### 🎯 Goal
