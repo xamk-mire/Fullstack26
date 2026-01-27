@@ -1206,22 +1206,22 @@ export default function App() {
       {/* Parent route: always show Layout */}
       <Route path="/" element={<Layout />}>
         {/* When user goes to "/", redirect to "/tasks" */}
-        <Route index element={<Navigate to="/tasks" replace />} />
+        {/* Uncomment this once you have created TaskListPage component <Route index element={<Navigate to="/tasks" replace />} />*/}
 
         {/* List page */}
-        <Route path="tasks" element={<TasksListPage />} />
+        {/* Uncomment this once you have created TaskListPage component <Route path="tasks" element={<TasksListPage />} />*/}
 
         {/* Create page */}
-        <Route path="tasks/new" element={<TaskFormPage mode="create" />} />
+        {/* Uncomment this once you have created TaskFormPage component <Route path="tasks/new" element={<TaskFormPage mode="create" />} />*/}
 
         {/* Details page (":id" is a route parameter) */}
-        <Route path="tasks/:id" element={<TaskDetailsPage />} />
+        {/* Uncomment this once you have created TaskDetailsPage component <Route path="tasks/:id" element={<TaskDetailsPage />} />*/}
 
         {/* Edit page */}
-        <Route path="tasks/:id/edit" element={<TaskFormPage mode="edit" />} />
+        {/* Uncomment this once you have created TaskFormPage component <Route path="tasks/:id/edit" element={<TaskFormPage mode="edit" />} />*/}
 
         {/* Fallback for unknown routes */}
-        <Route path="*" element={<NotFoundPage />} />
+        {/* Uncomment this once you have created NotFoundPage component <Route path="*" element={<NotFoundPage />} />*/}
       </Route>
     </Routes>
   );
@@ -1499,6 +1499,8 @@ You will likely need actions like:
     
 
 ### Examples (copyable patterns)
+
+[Meaning of Spread Operator](https://www.geeksforgeeks.org/reactjs/what-is-the-meaning-of-spread-operator-in-reactjs/)
 
 #### Add task
 
@@ -1931,6 +1933,9 @@ type Props = {
 export default function TasksListPage({ tasks, onToggle, onDelete }: Props) {
   return (
     <section>
+      {/* Here is an example of how to add inline styles */}
+      {/* Inline styles should only be used when you quicly want to try styles */}
+      {/* In any final producs, the styles should be moved inside dedicated style files (css) */}
       <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <h2>Tasks</h2>
         <Link to="/tasks/new">+ Add Task</Link>
