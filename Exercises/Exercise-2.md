@@ -190,7 +190,7 @@ You should see the browser update **automatically** without refreshing.
 
 ---
 
-### When to move on
+### ⚠️ When to move on
 
 Only continue to Step 2 when:
 
@@ -605,7 +605,7 @@ But for beginners, it’s usually easier to keep it required and always default 
 
 ---
 
-### When to move on
+### ⚠️ When to move on
 
 You are ready to continue when:
 
@@ -809,7 +809,7 @@ That usually happens if you try to run code in a non-browser environment. In Vit
 
 ---
 
-### When to move on
+### ⚠️ When to move on
 
 You are ready for the next step when:
 
@@ -1070,7 +1070,7 @@ Fix: Use `NavLink` + the `isActive` callback pattern shown above.
 
 ---
 
-## When to move on
+## ⚠️ When to move on
 
 You’re ready to continue when:
 
@@ -1388,7 +1388,7 @@ type Props = { mode: "create" | "edit" };
 
 ---
 
-## When to move on
+## ⚠️ When to move on
 
 You are ready to continue when:
 
@@ -1665,7 +1665,7 @@ TypeScript will help here—if the props don’t match, you’ll get a compile e
 
 ---
 
-## When to move on
+## ⚠️ When to move on
 
 You’re ready for Step 8 when:
 
@@ -2062,7 +2062,7 @@ onChange={() => onToggle(task.id)}
 
 ---
 
-## When to move on
+## ⚠️ When to move on
 
 You’re ready for Step 9 when:
 
@@ -2959,3 +2959,7 @@ Now you must pass `tasks`, `onAdd`, and `onUpdate` into the route elements.
     
 
 ---
+
+# Step 11 — Customise the UI
+
+After you have completed all the steps above, you can now play around and try styling your application using CSS freely
