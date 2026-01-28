@@ -1,5 +1,7 @@
 # Vite: A Fast, Friendly Development Environment
 
+[Vite](https://vite.dev/)
+
 When you built pages in Week 1 & 2, you could open `index.html` directly in a browser and everything worked. That’s great for learning fundamentals—but as soon as you start building modern applications with React, TypeScript, and multiple files, you need a better environment:
 
 * a way to bundle code into something the browser can run
