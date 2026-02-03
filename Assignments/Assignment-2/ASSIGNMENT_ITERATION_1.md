@@ -6,6 +6,27 @@
 
 **Scope:** This iteration covers **Exercise**, **ExerciseField**, **Category**, and **ExerciseCategory** only. Additional types will be implemented in later iterations.
 
+---
+
+## Introduction
+
+This assignment is **Iteration 1** of a four-iteration plan to build a fullstack **Exercise/Workout Tracker** application. The goal of the project is to allow users to track their daily exercises—such as running, swimming, or gym sessions—with details like distance, duration, weight, sets, and reps. Exercises can be grouped with categories (e.g. Cardio, Strength, Running) and will later be organised into reusable workouts. The overall development plan is described in
+
+In **Iteration 1** you build the **frontend only**. There is no backend server and no database. You will create a React application that runs entirely in the browser and uses **mock data** stored in the frontend code. This approach lets you focus on the user interface, navigation, and data flow without dealing with APIs or persistence yet. In later iterations you will add a FastAPI backend, connect to PostgreSQL, and replace the mock data with real API calls—without changing the overall structure of the UI.
+
+**What you will build in this assignment:**
+
+- A **single-page application (SPA)** with client-side routing. Users can open an **Exercises** list, apply filters (by date and by category), and click an exercise to see its **detail** page with name, date, notes, categories, and a list of detail fields (e.g. weight 100 kg, sets 3, reps 8).
+- A **data layer** built around TypeScript **domain models** (matching the data model below) and **DTOs** (Data Transfer Objects). The UI and the data service use DTOs only; mock data and service internals use domain types. This keeps the UI decoupled from the database shape and makes it straightforward to swap mock data for a real API in Iteration 2.
+- A **layout** shared by all pages: a header (e.g. "Exercise Tracker"), a navigation link to the Exercises list, and a main content area where the list or detail view is shown.
+- **Client-side filtering** on the exercises list: by date range (All, Today, This week, This month) and by one or more categories. Filtering is done in memory; no server requests when the user changes a filter.
+
+The **data model** for this iteration includes four entities: **Category**, **Exercise**, **ExerciseCategory** (linking exercises to categories), and **ExerciseField** (detail rows for each exercise). Workouts, users, and authentication are out of scope here and will be introduced in later iterations.
+
+By the end of this assignment you will have a working, navigable frontend that displays and filters exercise data. You will use it as the basis for connecting to the backend in the next iteration.
+
+---
+
 ### Data model (ER diagram)
 
 The following diagram shows the entities and relationships used in this iteration. All ids are integers/numbers. Note that the diagram is just initial one, and might be updated in up coming iterations.
