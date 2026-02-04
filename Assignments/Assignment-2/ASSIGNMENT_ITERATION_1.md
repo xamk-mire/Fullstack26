@@ -107,25 +107,35 @@ By the end of this assignment you will have:
 
    - In `frontend`, run:
      ```bash
-     npm install -D tailwindcss postcss autoprefixer
-     npx tailwindcss init -p
+     npm install tailwindcss @tailwindcss/vite
      ```
-   - In `tailwind.config.js` (or `.ts`), set `content` to include your source files, e.g.:
+   - In `vite.config.ts:
      ```js
-     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+         import { defineConfig } from 'vite';
+         import react from "@vitejs/plugin-react";
+         import tailwindcss from '@tailwindcss/vite';
+        
+         export default defineConfig({
+           plugins: [
+             react(),
+             tailwindcss(),
+           ],
+         })
      ```
-   - In `src/index.css`, add the Tailwind directives:
+   - In `src/index.css` or `app.css`, add the Tailwind directives:
      ```css
-     @tailwind base;
-     @tailwind components;
-     @tailwind utilities;
+     @import "tailwindcss";
      ```
      - You can delete all other css styles from the file
 
 3. **Install DaisyUI**
 
-   - Run: `npm install daisyui`
-   - In `tailwind.config.js`, add `daisyui` to the `plugins` array. Optionally pick a theme in `theme.extend` or `daisyui.themes`.
+   - Run: `npm i -D daisyui@latest`
+   - In `index.css` or `app.css`, add `daisyui` to the `plugins` array. Optionally pick a theme in `theme.extend` or `daisyui.themes`.
+```css
+@import "tailwindcss";
+@plugin "daisyui";
+```
 
 4. **Install React Router**
 
