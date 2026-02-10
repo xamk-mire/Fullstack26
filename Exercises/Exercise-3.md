@@ -935,3 +935,40 @@ After completing this exercise you will have:
 - The **example Task Tracker frontend** (or your Exercise 2 app) updated with: an **API client** (`src/api/tasksApi.ts`) and **per-page data fetching** — App only renders routes; **TasksListPage** fetches the list and refetches after toggle/delete; **TaskDetailsPage** fetches the single task by id and refetches or navigates after actions; **TaskFormPage** in edit mode fetches the task to edit, and create/update call the API then navigate. No shared context; each page is responsible for the data it needs.
 
 When you add a real database later, you keep the same API and service layer and only replace the repository (e.g. `store.py` with a database-backed repository).
+
+---
+
+# Reporting guide — demonstrating the application with screenshots (PDF report)
+
+Remember to include your github classroom repository link in your report
+
+Use screenshots to show that your Task Tracker full-stack application is working correctly. The goal is to give a short, clear proof that both the backend and frontend are running and that the main flows work.
+
+## What to include
+
+1. **Backend running**
+
+   - Screenshot of **http://127.0.0.1:8000/docs** showing the Swagger UI with the task endpoints (GET/POST/PATCH/DELETE).
+
+2. **Frontend — task list**
+
+   - Screenshot of the **task list page** (e.g. http://localhost:5173) with at least one task visible, loaded from the API.
+
+3. **Frontend — main flows (pick at least 2–3)**
+
+   - **Add task:** List view or form with a newly added task (or the form right before/after submit).
+   - **Task details:** Detail page for one task showing title, priority, completed state.
+   - **Edit task:** Edit form with existing data, or the list/details after an edit.
+   - **Toggle completion:** List or details view with a task shown as completed (checkbox checked).
+   - **Delete:** List view after a task has been deleted (the task no longer appears).
+
+4. **Optional but recommended**
+   - One screenshot with the browser **Network** tab open showing a successful API call (e.g. `GET /api/tasks` or `POST /api/tasks`) to confirm the frontend is talking to your backend.
+
+## Tips
+
+- **Keep it short.** A few clear screenshots are better than many. Aim for about 4–6 images that cover backend + list + 2–3 main flows.
+- **Add short captions** (e.g. “Backend docs”, “Task list from API”, “Edit task”) so the reader knows what each screenshot shows.
+- Add the screenshots in to your exercise report and return the report in PDF format. (no template is provided)
+- Ensure both backend and frontend are running when you take the screenshots, and that `.env` points the frontend to your backend URL (e.g. `http://localhost:8000`).
+
