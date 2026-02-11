@@ -1,5 +1,7 @@
 # Exercise 3: Task Tracker — FastAPI Backend and Frontend Integration
 
+You can find the example solution for the Exercise 2 here: [Exercise 2 example](https://github.com/xamk-mire/FullStack26-exercise-examples/tree/main/Exercise-2)
+
 ## Important!
 
 Implement your solution inside your classroom exercises repository:
