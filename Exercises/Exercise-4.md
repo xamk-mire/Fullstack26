@@ -1,5 +1,7 @@
 # Exercise 4: Task Tracker — PostgreSQL and SQLAlchemy 2
 
+You can find the example solution for the Exercise 3 here: [Exercise 3 example](https://github.com/xamk-mire/FullStack26-exercise-examples/tree/main/Exercise-3)
+
 ## Important!
 
 This exercise is a **follow-up to Exercise 3**. You will upgrade the Task Tracker backend to use **PostgreSQL** and **SQLAlchemy 2** instead of the in-memory store.
