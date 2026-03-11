@@ -4,7 +4,7 @@
 **Iteration:** 3 of 4  
 **Focus:** Replace in-memory storage with PostgreSQL, use an ORM, then add the ability to create new exercises and update existing ones.
 
-**Prerequisite:** Completed [ASSIGNMENT_ITERATION_2.md](./Assignments/Assignment-3/ASSIGNMENT_ITERATION_2.md) (FastAPI Backend and Frontend Integration). You will use the existing backend and frontend and extend them with database persistence and create/update functionality.
+**Prerequisite:** Completed [ASSIGNMENT_ITERATION_2.md](../Assignment-3/ASSIGNMENT_ITERATION_2.md) (FastAPI Backend and Frontend Integration). You will use the existing backend and frontend and extend them with database persistence and create/update functionality.
 
 ---
 
@@ -328,7 +328,7 @@ After completing this assignment you will have:
 
 ## Reporting
 
-Follow the instructions in **[ASSIGMENT_ITERATION_3_REPORTING.md](./Assignments/Assignment-4/ASSIGNMENT_ITERATION_3_REPORTING.md)
+Follow the instructions in **[ASSIGMENT_ITERATION_3_REPORTING.md](./ASSIGNMENT_ITERATION_3_REPORTING.md)**
 
 ---
 
